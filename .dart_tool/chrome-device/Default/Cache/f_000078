@@ -1,0 +1,364 @@
+define(['dart_sdk', 'packages/flutter/src/material/icon_button.dart', 'packages/flutter/src/widgets/widget_span.dart', 'packages/flutter/src/painting/box_decoration.dart', 'packages/login/constant.dart', 'packages/flutter/src/painting/box_border.dart', 'packages/flutter/src/material/colors.dart', 'packages/flutter/src/painting/strut_style.dart', 'packages/flutter/src/widgets/icon.dart'], (function load__packages__login__Screens__Home__components__homeheader__IconBtnWithCounter_dart(dart_sdk, packages__flutter__src__material__icon_button$46dart, packages__flutter__src__widgets__widget_span$46dart, packages__flutter__src__painting__box_decoration$46dart, packages__login__constant$46dart, packages__flutter__src__painting__box_border$46dart, packages__flutter__src__material__colors$46dart, packages__flutter__src__painting__strut_style$46dart, packages__flutter__src__widgets__icon$46dart) {
+  'use strict';
+  const core = dart_sdk.core;
+  const _interceptors = dart_sdk._interceptors;
+  const dart = dart_sdk.dart;
+  const dartx = dart_sdk.dartx;
+  const ink_well = packages__flutter__src__material__icon_button$46dart.src__material__ink_well;
+  const basic = packages__flutter__src__widgets__widget_span$46dart.src__widgets__basic;
+  const container = packages__flutter__src__widgets__widget_span$46dart.src__widgets__container;
+  const widget_inspector = packages__flutter__src__widgets__widget_span$46dart.src__widgets__widget_inspector;
+  const framework = packages__flutter__src__widgets__widget_span$46dart.src__widgets__framework;
+  const text = packages__flutter__src__widgets__widget_span$46dart.src__widgets__text;
+  const box_decoration = packages__flutter__src__painting__box_decoration$46dart.src__painting__box_decoration;
+  const constant = packages__login__constant$46dart.constant;
+  const box_border = packages__flutter__src__painting__box_border$46dart.src__painting__box_border;
+  const colors = packages__flutter__src__material__colors$46dart.src__material__colors;
+  const text_style = packages__flutter__src__painting__strut_style$46dart.src__painting__text_style;
+  const icon = packages__flutter__src__widgets__icon$46dart.src__widgets__icon;
+  var IconBtnWithCounter = Object.create(dart.library);
+  var $add = dartx.add;
+  dart._checkModuleNullSafetyMode(false);
+  var T = {
+    _LocationL: () => (T._LocationL = dart.constFn(dart.legacy(widget_inspector._Location)))(),
+    WidgetL: () => (T.WidgetL = dart.constFn(dart.legacy(framework.Widget)))(),
+    JSArrayOfWidgetL: () => (T.JSArrayOfWidgetL = dart.constFn(_interceptors.JSArray$(T.WidgetL())))()
+  };
+  var T$Eval = Object.assign({
+    _: () => T$Eval
+  }, T);
+  var S = {
+    _: () => S
+  };
+  var S$Eval = Object.assign({
+    _: () => S$Eval
+  }, S);
+  const CT = Object.create({
+    _: () => (C, CT)
+  });
+  dart.defineLazy(CT, {
+    get C2() {
+      return C[2] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 13,
+        [_Location_line]: 25,
+        [_Location_file]: null
+      });
+    },
+    get C3() {
+      return C[3] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 13,
+        [_Location_line]: 26,
+        [_Location_file]: null
+      });
+    },
+    get C4() {
+      return C[4] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "decoration",
+        [_Location_column]: 13,
+        [_Location_line]: 27,
+        [_Location_file]: null
+      });
+    },
+    get C5() {
+      return C[5] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 13,
+        [_Location_line]: 31,
+        [_Location_file]: null
+      });
+    },
+    get C1() {
+      return C[1] = dart.constList([C[2] || CT.C2, C[3] || CT.C3, C[4] || CT.C4, C[5] || CT.C5], T._LocationL());
+    },
+    get C0() {
+      return C[0] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[1] || CT.C1,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 24,
+        [_Location_file]: "file:///C:/Users/Jinal/AndroidStudioProjects/flutter_projects/login/lib/Screens/Home/components/homeheader/IconBtnWithCounter.dart"
+      });
+    },
+    get C8() {
+      return C[8] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 41,
+        [_Location_line]: 46,
+        [_Location_file]: null
+      });
+    },
+    get C9() {
+      return C[9] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 17,
+        [_Location_line]: 47,
+        [_Location_file]: null
+      });
+    },
+    get C7() {
+      return C[7] = dart.constList([C[8] || CT.C8, C[9] || CT.C9], T._LocationL());
+    },
+    get C6() {
+      return C[6] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[7] || CT.C7,
+        [_Location_name]: null,
+        [_Location_column]: 24,
+        [_Location_line]: 46,
+        [_Location_file]: "file:///C:/Users/Jinal/AndroidStudioProjects/flutter_projects/login/lib/Screens/Home/components/homeheader/IconBtnWithCounter.dart"
+      });
+    },
+    get C12() {
+      return C[12] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 17,
+        [_Location_line]: 46,
+        [_Location_file]: null
+      });
+    },
+    get C11() {
+      return C[11] = dart.constList([C[12] || CT.C12], T._LocationL());
+    },
+    get C10() {
+      return C[10] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[11] || CT.C11,
+        [_Location_name]: null,
+        [_Location_column]: 22,
+        [_Location_line]: 45,
+        [_Location_file]: "file:///C:/Users/Jinal/AndroidStudioProjects/flutter_projects/login/lib/Screens/Home/components/homeheader/IconBtnWithCounter.dart"
+      });
+    },
+    get C15() {
+      return C[15] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 15,
+        [_Location_line]: 38,
+        [_Location_file]: null
+      });
+    },
+    get C16() {
+      return C[16] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 15,
+        [_Location_line]: 39,
+        [_Location_file]: null
+      });
+    },
+    get C17() {
+      return C[17] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "decoration",
+        [_Location_column]: 15,
+        [_Location_line]: 40,
+        [_Location_file]: null
+      });
+    },
+    get C18() {
+      return C[18] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 15,
+        [_Location_line]: 45,
+        [_Location_file]: null
+      });
+    },
+    get C14() {
+      return C[14] = dart.constList([C[15] || CT.C15, C[16] || CT.C16, C[17] || CT.C17, C[18] || CT.C18], T._LocationL());
+    },
+    get C13() {
+      return C[13] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[14] || CT.C14,
+        [_Location_name]: null,
+        [_Location_column]: 20,
+        [_Location_line]: 37,
+        [_Location_file]: "file:///C:/Users/Jinal/AndroidStudioProjects/flutter_projects/login/lib/Screens/Home/components/homeheader/IconBtnWithCounter.dart"
+      });
+    },
+    get C21() {
+      return C[21] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "right",
+        [_Location_column]: 13,
+        [_Location_line]: 36,
+        [_Location_file]: null
+      });
+    },
+    get C22() {
+      return C[22] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 13,
+        [_Location_line]: 37,
+        [_Location_file]: null
+      });
+    },
+    get C20() {
+      return C[20] = dart.constList([C[21] || CT.C21, C[22] || CT.C22], T._LocationL());
+    },
+    get C19() {
+      return C[19] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[20] || CT.C20,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 34,
+        [_Location_file]: "file:///C:/Users/Jinal/AndroidStudioProjects/flutter_projects/login/lib/Screens/Home/components/homeheader/IconBtnWithCounter.dart"
+      });
+    },
+    get C25() {
+      return C[25] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 9,
+        [_Location_line]: 23,
+        [_Location_file]: null
+      });
+    },
+    get C24() {
+      return C[24] = dart.constList([C[25] || CT.C25], T._LocationL());
+    },
+    get C23() {
+      return C[23] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[24] || CT.C24,
+        [_Location_name]: null,
+        [_Location_column]: 14,
+        [_Location_line]: 22,
+        [_Location_file]: "file:///C:/Users/Jinal/AndroidStudioProjects/flutter_projects/login/lib/Screens/Home/components/homeheader/IconBtnWithCounter.dart"
+      });
+    },
+    get C28() {
+      return C[28] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onTap",
+        [_Location_column]: 7,
+        [_Location_line]: 21,
+        [_Location_file]: null
+      });
+    },
+    get C29() {
+      return C[29] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 7,
+        [_Location_line]: 22,
+        [_Location_file]: null
+      });
+    },
+    get C27() {
+      return C[27] = dart.constList([C[28] || CT.C28, C[29] || CT.C29], T._LocationL());
+    },
+    get C26() {
+      return C[26] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[27] || CT.C27,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 20,
+        [_Location_file]: "file:///C:/Users/Jinal/AndroidStudioProjects/flutter_projects/login/lib/Screens/Home/components/homeheader/IconBtnWithCounter.dart"
+      });
+    }
+  }, false);
+  var C = Array(30).fill(void 0);
+  var I = ["package:login/Screens/Home/components/homeheader/IconBtnWithCounter.dart"];
+  var icon$ = dart.privateName(IconBtnWithCounter, "IconBtnWithCounter.icon");
+  var numOfItem$ = dart.privateName(IconBtnWithCounter, "IconBtnWithCounter.numOfItem");
+  var press$ = dart.privateName(IconBtnWithCounter, "IconBtnWithCounter.press");
+  var _Location_parameterLocations = dart.privateName(widget_inspector, "_Location.parameterLocations");
+  var _Location_name = dart.privateName(widget_inspector, "_Location.name");
+  var _Location_column = dart.privateName(widget_inspector, "_Location.column");
+  var _Location_line = dart.privateName(widget_inspector, "_Location.line");
+  var _Location_file = dart.privateName(widget_inspector, "_Location.file");
+  IconBtnWithCounter.IconBtnWithCounter = class IconBtnWithCounter extends framework.StatelessWidget {
+    get icon() {
+      return this[icon$];
+    }
+    set icon(value) {
+      super.icon = value;
+    }
+    get numOfItem() {
+      return this[numOfItem$];
+    }
+    set numOfItem(value) {
+      super.numOfItem = value;
+    }
+    get press() {
+      return this[press$];
+    }
+    set press(value) {
+      super.press = value;
+    }
+    build(context) {
+      return new ink_well.InkWell.new({onTap: this.press, child: new basic.Stack.new({children: (() => {
+            let t0 = T.JSArrayOfWidgetL().of([new container.Container.new({height: 50.0, width: 50.0, decoration: new box_decoration.BoxDecoration.new({color: constant.search_background.withOpacity(0.1), shape: box_border.BoxShape.circle}), child: this.icon, $creationLocationd_0dea112b090073317d4: C[0] || CT.C0})]);
+            if (this.numOfItem !== 0) t0[$add](new basic.Positioned.new({right: 0.0, child: new container.Container.new({height: 18.0, width: 18.0, decoration: new box_decoration.BoxDecoration.new({color: constant.Time, shape: box_border.BoxShape.circle, border: box_border.Border.all({width: 1.5, color: colors.Colors.white})}), child: new basic.Center.new({child: new text.Text.new(dart.str(this.numOfItem), {style: new text_style.TextStyle.new({color: colors.Colors.white, fontSize: 9.0}), $creationLocationd_0dea112b090073317d4: C[6] || CT.C6}), $creationLocationd_0dea112b090073317d4: C[10] || CT.C10}), $creationLocationd_0dea112b090073317d4: C[13] || CT.C13}), $creationLocationd_0dea112b090073317d4: C[19] || CT.C19}));
+            return t0;
+          })(), $creationLocationd_0dea112b090073317d4: C[23] || CT.C23}), $creationLocationd_0dea112b090073317d4: C[26] || CT.C26});
+    }
+  };
+  (IconBtnWithCounter.IconBtnWithCounter.new = function(opts) {
+    let key = opts && 'key' in opts ? opts.key : null;
+    let icon = opts && 'icon' in opts ? opts.icon : null;
+    let numOfItem = opts && 'numOfItem' in opts ? opts.numOfItem : 0;
+    let press = opts && 'press' in opts ? opts.press : null;
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    this[icon$] = icon;
+    this[numOfItem$] = numOfItem;
+    this[press$] = press;
+    IconBtnWithCounter.IconBtnWithCounter.__proto__.new.call(this, {key: key, $creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = IconBtnWithCounter.IconBtnWithCounter.prototype;
+  dart.addTypeTests(IconBtnWithCounter.IconBtnWithCounter);
+  dart.addTypeCaches(IconBtnWithCounter.IconBtnWithCounter);
+  dart.setMethodSignature(IconBtnWithCounter.IconBtnWithCounter, () => ({
+    __proto__: dart.getMethods(IconBtnWithCounter.IconBtnWithCounter.__proto__),
+    build: dart.fnType(dart.legacy(framework.Widget), [dart.legacy(framework.BuildContext)])
+  }));
+  dart.setLibraryUri(IconBtnWithCounter.IconBtnWithCounter, I[0]);
+  dart.setFieldSignature(IconBtnWithCounter.IconBtnWithCounter, () => ({
+    __proto__: dart.getFields(IconBtnWithCounter.IconBtnWithCounter.__proto__),
+    icon: dart.finalFieldType(dart.legacy(icon.Icon)),
+    numOfItem: dart.finalFieldType(dart.legacy(core.int)),
+    press: dart.finalFieldType(dart.legacy(dart.fnType(dart.void, [])))
+  }));
+  dart.trackLibraries("packages/login/Screens/Home/components/homeheader/IconBtnWithCounter.dart", {
+    "package:login/Screens/Home/components/homeheader/IconBtnWithCounter.dart": IconBtnWithCounter
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["IconBtnWithCounter.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;IAaa;;;;;;IACD;;;;;;IACe;;;;;;UAGC;AACxB,YAAO,kCACE,mBACA,+BACK;8CACR,qCACU,aACD,kBACK,6CACH,AAAkB,uCAAY,aACrB,qCAEX;AAET,gBAAG,AAAU,mBAAG,GAChB,0CAES,YACA,qCACG,aACD,kBACK,6CACH,sBACS,oCACD,8BAAW,YAAmB,gCAExC,6BACE,kBAAiB,SAAV,yBACP,qCACS,+BACJ;;;IAS1B;;;QAnDM;QACY;QACV;QACY;;IAFF;IACV;IACY;AACf,yEAAW,GAAG;;EAAC","file":"../../../../../../../../../../packages/login/Screens/Home/components/homeheader/IconBtnWithCounter.dart.lib.js"}');
+  // Exports:
+  return {
+    Screens__Home__components__homeheader__IconBtnWithCounter: IconBtnWithCounter
+  };
+}));
+
+//# sourceMappingURL=IconBtnWithCounter.dart.lib.js.map

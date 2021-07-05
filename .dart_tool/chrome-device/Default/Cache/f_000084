@@ -1,0 +1,403 @@
+define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/flutter/src/painting/edge_insets.dart', 'packages/flutter/src/painting/box_decoration.dart', 'packages/login/constant.dart', 'packages/flutter/src/painting/border_radius.dart', 'packages/login/Screens/Details/components/ColorsDot/colorDot.dart', 'packages/flutter/src/widgets/spacer.dart', 'packages/login/components/roundedbtn.dart', 'packages/flutter/src/widgets/icon.dart', 'packages/flutter/src/material/icons.dart', 'packages/login/models/product.dart'], (function load__packages__login__Screens__Details__components__ColorsDot__colorDotts_dart(dart_sdk, packages__flutter__src__widgets__widget_span$46dart, packages__flutter__src__painting__edge_insets$46dart, packages__flutter__src__painting__box_decoration$46dart, packages__login__constant$46dart, packages__flutter__src__painting__border_radius$46dart, packages__login__Screens__Details__components__ColorsDot__colorDot$46dart, packages__flutter__src__widgets__spacer$46dart, packages__login__components__roundedbtn$46dart, packages__flutter__src__widgets__icon$46dart, packages__flutter__src__material__icons$46dart, packages__login__models__product$46dart) {
+  'use strict';
+  const core = dart_sdk.core;
+  const dart = dart_sdk.dart;
+  const dartx = dart_sdk.dartx;
+  const container = packages__flutter__src__widgets__widget_span$46dart.src__widgets__container;
+  const basic = packages__flutter__src__widgets__widget_span$46dart.src__widgets__basic;
+  const framework = packages__flutter__src__widgets__widget_span$46dart.src__widgets__framework;
+  const widget_inspector = packages__flutter__src__widgets__widget_span$46dart.src__widgets__widget_inspector;
+  const edge_insets = packages__flutter__src__painting__edge_insets$46dart.src__painting__edge_insets;
+  const box_decoration = packages__flutter__src__painting__box_decoration$46dart.src__painting__box_decoration;
+  const constant = packages__login__constant$46dart.constant;
+  const border_radius = packages__flutter__src__painting__border_radius$46dart.src__painting__border_radius;
+  const colorDot = packages__login__Screens__Details__components__ColorsDot__colorDot$46dart.Screens__Details__components__ColorsDot__colorDot;
+  const spacer = packages__flutter__src__widgets__spacer$46dart.src__widgets__spacer;
+  const roundedbtn = packages__login__components__roundedbtn$46dart.components__roundedbtn;
+  const icon = packages__flutter__src__widgets__icon$46dart.src__widgets__icon;
+  const icons = packages__flutter__src__material__icons$46dart.src__material__icons;
+  const product = packages__login__models__product$46dart.models__product;
+  var colorDotts = Object.create(dart.library);
+  var $length = dartx.length;
+  var $_get = dartx._get;
+  var $add = dartx.add;
+  dart._checkModuleNullSafetyMode(false);
+  var T = {
+    WidgetL: () => (T.WidgetL = dart.constFn(dart.legacy(framework.Widget)))(),
+    ListOfWidgetL: () => (T.ListOfWidgetL = dart.constFn(core.List$(T.WidgetL())))(),
+    _LocationL: () => (T._LocationL = dart.constFn(dart.legacy(widget_inspector._Location)))(),
+    ColorDotL: () => (T.ColorDotL = dart.constFn(dart.legacy(colorDot.ColorDot)))(),
+    intL: () => (T.intL = dart.constFn(dart.legacy(core.int)))(),
+    intLToColorDotL: () => (T.intLToColorDotL = dart.constFn(dart.fnType(T.ColorDotL(), [T.intL()])))(),
+    VoidToNull: () => (T.VoidToNull = dart.constFn(dart.fnType(core.Null, [])))()
+  };
+  var T$Eval = Object.assign({
+    _: () => T$Eval
+  }, T);
+  var S = {
+    _: () => S
+  };
+  var S$Eval = Object.assign({
+    _: () => S$Eval
+  }, S);
+  const CT = Object.create({
+    _: () => (C, CT)
+  });
+  dart.defineLazy(CT, {
+    get C2() {
+      return C[2] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "color",
+        [_Location_column]: 73,
+        [_Location_line]: 31,
+        [_Location_file]: null
+      });
+    },
+    get C3() {
+      return C[3] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "isSelected",
+        [_Location_column]: 103,
+        [_Location_line]: 31,
+        [_Location_file]: null
+      });
+    },
+    get C1() {
+      return C[1] = dart.constList([C[2] || CT.C2, C[3] || CT.C3], T._LocationL());
+    },
+    get C0() {
+      return C[0] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[1] || CT.C1,
+        [_Location_name]: null,
+        [_Location_column]: 64,
+        [_Location_line]: 31,
+        [_Location_file]: "file:///C:/Users/Jinal/AndroidStudioProjects/flutter_projects/login/lib/Screens/Details/components/ColorsDot/colorDotts.dart"
+      });
+    },
+    get C5() {
+      return C[5] = dart.constList([], T._LocationL());
+    },
+    get C4() {
+      return C[4] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[5] || CT.C5,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 32,
+        [_Location_file]: "file:///C:/Users/Jinal/AndroidStudioProjects/flutter_projects/login/lib/Screens/Details/components/ColorsDot/colorDotts.dart"
+      });
+    },
+    get C8() {
+      return C[8] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 32,
+        [_Location_line]: 34,
+        [_Location_file]: null
+      });
+    },
+    get C9() {
+      return C[9] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "size",
+        [_Location_column]: 40,
+        [_Location_line]: 34,
+        [_Location_file]: null
+      });
+    },
+    get C7() {
+      return C[7] = dart.constList([C[8] || CT.C8, C[9] || CT.C9], T._LocationL());
+    },
+    get C6() {
+      return C[6] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[7] || CT.C7,
+        [_Location_name]: null,
+        [_Location_column]: 21,
+        [_Location_line]: 34,
+        [_Location_file]: "file:///C:/Users/Jinal/AndroidStudioProjects/flutter_projects/login/lib/Screens/Details/components/ColorsDot/colorDotts.dart"
+      });
+    },
+    get C12() {
+      return C[12] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 15,
+        [_Location_line]: 34,
+        [_Location_file]: null
+      });
+    },
+    get C13() {
+      return C[13] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "press",
+        [_Location_column]: 15,
+        [_Location_line]: 35,
+        [_Location_file]: null
+      });
+    },
+    get C11() {
+      return C[11] = dart.constList([C[12] || CT.C12, C[13] || CT.C13], T._LocationL());
+    },
+    get C10() {
+      return C[10] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[11] || CT.C11,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 33,
+        [_Location_file]: "file:///C:/Users/Jinal/AndroidStudioProjects/flutter_projects/login/lib/Screens/Details/components/ColorsDot/colorDotts.dart"
+      });
+    },
+    get C16() {
+      return C[16] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 22,
+        [_Location_line]: 37,
+        [_Location_file]: null
+      });
+    },
+    get C15() {
+      return C[15] = dart.constList([C[16] || CT.C16], T._LocationL());
+    },
+    get C14() {
+      return C[14] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[15] || CT.C15,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 37,
+        [_Location_file]: "file:///C:/Users/Jinal/AndroidStudioProjects/flutter_projects/login/lib/Screens/Details/components/ColorsDot/colorDotts.dart"
+      });
+    },
+    get C19() {
+      return C[19] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 32,
+        [_Location_line]: 39,
+        [_Location_file]: null
+      });
+    },
+    get C20() {
+      return C[20] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "size",
+        [_Location_column]: 37,
+        [_Location_line]: 39,
+        [_Location_file]: null
+      });
+    },
+    get C18() {
+      return C[18] = dart.constList([C[19] || CT.C19, C[20] || CT.C20], T._LocationL());
+    },
+    get C17() {
+      return C[17] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[18] || CT.C18,
+        [_Location_name]: null,
+        [_Location_column]: 21,
+        [_Location_line]: 39,
+        [_Location_file]: "file:///C:/Users/Jinal/AndroidStudioProjects/flutter_projects/login/lib/Screens/Details/components/ColorsDot/colorDotts.dart"
+      });
+    },
+    get C23() {
+      return C[23] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 15,
+        [_Location_line]: 39,
+        [_Location_file]: null
+      });
+    },
+    get C24() {
+      return C[24] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "press",
+        [_Location_column]: 15,
+        [_Location_line]: 40,
+        [_Location_file]: null
+      });
+    },
+    get C22() {
+      return C[22] = dart.constList([C[23] || CT.C23, C[24] || CT.C24], T._LocationL());
+    },
+    get C21() {
+      return C[21] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[22] || CT.C22,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 38,
+        [_Location_file]: "file:///C:/Users/Jinal/AndroidStudioProjects/flutter_projects/login/lib/Screens/Details/components/ColorsDot/colorDotts.dart"
+      });
+    },
+    get C27() {
+      return C[27] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 11,
+        [_Location_line]: 30,
+        [_Location_file]: null
+      });
+    },
+    get C26() {
+      return C[26] = dart.constList([C[27] || CT.C27], T._LocationL());
+    },
+    get C25() {
+      return C[25] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[26] || CT.C26,
+        [_Location_name]: null,
+        [_Location_column]: 16,
+        [_Location_line]: 29,
+        [_Location_file]: "file:///C:/Users/Jinal/AndroidStudioProjects/flutter_projects/login/lib/Screens/Details/components/ColorsDot/colorDotts.dart"
+      });
+    },
+    get C30() {
+      return C[30] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "margin",
+        [_Location_column]: 7,
+        [_Location_line]: 21,
+        [_Location_file]: null
+      });
+    },
+    get C31() {
+      return C[31] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 7,
+        [_Location_line]: 22,
+        [_Location_file]: null
+      });
+    },
+    get C32() {
+      return C[32] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 7,
+        [_Location_line]: 23,
+        [_Location_file]: null
+      });
+    },
+    get C33() {
+      return C[33] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 7,
+        [_Location_line]: 24,
+        [_Location_file]: null
+      });
+    },
+    get C34() {
+      return C[34] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "decoration",
+        [_Location_column]: 7,
+        [_Location_line]: 25,
+        [_Location_file]: null
+      });
+    },
+    get C35() {
+      return C[35] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 9,
+        [_Location_line]: 29,
+        [_Location_file]: null
+      });
+    },
+    get C29() {
+      return C[29] = dart.constList([C[30] || CT.C30, C[31] || CT.C31, C[32] || CT.C32, C[33] || CT.C33, C[34] || CT.C34, C[35] || CT.C35], T._LocationL());
+    },
+    get C28() {
+      return C[28] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[29] || CT.C29,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 20,
+        [_Location_file]: "file:///C:/Users/Jinal/AndroidStudioProjects/flutter_projects/login/lib/Screens/Details/components/ColorsDot/colorDotts.dart"
+      });
+    }
+  }, false);
+  var C = Array(36).fill(void 0);
+  var I = ["package:login/Screens/Details/components/ColorsDot/colorDotts.dart"];
+  var product$ = dart.privateName(colorDotts, "ColorsDottts.product");
+  var _Location_parameterLocations = dart.privateName(widget_inspector, "_Location.parameterLocations");
+  var _Location_name = dart.privateName(widget_inspector, "_Location.name");
+  var _Location_column = dart.privateName(widget_inspector, "_Location.column");
+  var _Location_line = dart.privateName(widget_inspector, "_Location.line");
+  var _Location_file = dart.privateName(widget_inspector, "_Location.file");
+  colorDotts.ColorsDottts = class ColorsDottts extends framework.StatelessWidget {
+    get product() {
+      return this[product$];
+    }
+    set product(value) {
+      super.product = value;
+    }
+    build(context) {
+      let selectedColor = 1;
+      return new container.Container.new({margin: new edge_insets.EdgeInsets.symmetric({horizontal: 25.0, vertical: 20.0}), padding: new edge_insets.EdgeInsets.all(10.0), height: 60.0, width: 1 / 0, decoration: new box_decoration.BoxDecoration.new({color: constant.whiteback, borderRadius: new border_radius.BorderRadius.circular(20.0)}), child: new basic.Row.new({children: (() => {
+            let t0 = T.ListOfWidgetL().of(T.ListOfWidgetL().generate(this.product.colors[$length], dart.fn(index => new colorDot.ColorDot.new({color: this.product.colors[$_get](index), isSelected: selectedColor === index, $creationLocationd_0dea112b090073317d4: C[0] || CT.C0}), T.intLToColorDotL())));
+            t0[$add](new spacer.Spacer.new({$creationLocationd_0dea112b090073317d4: C[4] || CT.C4}));
+            t0[$add](new roundedbtn.RoundedBtn.new({icon: new icon.Icon.new(icons.Icons.remove, {size: 20.0, $creationLocationd_0dea112b090073317d4: C[6] || CT.C6}), press: dart.fn(() => {
+              }, T.VoidToNull()), $creationLocationd_0dea112b090073317d4: C[10] || CT.C10}));
+            t0[$add](new basic.SizedBox.new({width: 20.0, $creationLocationd_0dea112b090073317d4: C[14] || CT.C14}));
+            t0[$add](new roundedbtn.RoundedBtn.new({icon: new icon.Icon.new(icons.Icons.add, {size: 20.0, $creationLocationd_0dea112b090073317d4: C[17] || CT.C17}), press: dart.fn(() => {
+              }, T.VoidToNull()), $creationLocationd_0dea112b090073317d4: C[21] || CT.C21}));
+            return t0;
+          })(), $creationLocationd_0dea112b090073317d4: C[25] || CT.C25}), $creationLocationd_0dea112b090073317d4: C[28] || CT.C28});
+    }
+  };
+  (colorDotts.ColorsDottts.new = function(opts) {
+    let key = opts && 'key' in opts ? opts.key : null;
+    let product = opts && 'product' in opts ? opts.product : null;
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    this[product$] = product;
+    colorDotts.ColorsDottts.__proto__.new.call(this, {key: key, $creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = colorDotts.ColorsDottts.prototype;
+  dart.addTypeTests(colorDotts.ColorsDottts);
+  dart.addTypeCaches(colorDotts.ColorsDottts);
+  dart.setMethodSignature(colorDotts.ColorsDottts, () => ({
+    __proto__: dart.getMethods(colorDotts.ColorsDottts.__proto__),
+    build: dart.fnType(dart.legacy(framework.Widget), [dart.legacy(framework.BuildContext)])
+  }));
+  dart.setLibraryUri(colorDotts.ColorsDottts, I[0]);
+  dart.setFieldSignature(colorDotts.ColorsDottts, () => ({
+    __proto__: dart.getFields(colorDotts.ColorsDottts.__proto__),
+    product: dart.finalFieldType(dart.legacy(product.Product))
+  }));
+  dart.trackLibraries("packages/login/Screens/Details/components/ColorsDot/colorDotts.dart", {
+    "package:login/Screens/Details/components/ColorsDot/colorDotts.dart": colorDotts
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["colorDotts.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;IAcgB;;;;;;UAGY;AACpB,0BAAgB;AACpB,YAAO,sCACc,kDAAsB,gBAAc,iBACnC,+BAAI,eAChB,gCAEI,6CACL,kCACsB,wCAAS,gBAE7B,6BACK;0CACA,2BAAS,AAAQ,AAAO,8BAAQ,QAAC,SAAU,kCAAgB,AAAQ,AAAM,2BAAC,KAAK,eAAe,AAAc,aAAD,KAAI,KAAK;AAC5H;AACA,0DACQ,kBAAW,2BAAc,sEACxB;;AAET,oDAAgB;AAChB,0DACQ,kBAAW,wBAAW,wEACrB;;;;IAKnB;;;QAlCM;QACW;;;AACZ,2DAAW,GAAG;;EAAC","file":"../../../../../../../../../../packages/login/Screens/Details/components/ColorsDot/colorDotts.dart.lib.js"}');
+  // Exports:
+  return {
+    Screens__Details__components__ColorsDot__colorDotts: colorDotts
+  };
+}));
+
+//# sourceMappingURL=colorDotts.dart.lib.js.map
