@@ -7,7 +7,7 @@ class Background extends StatelessWidget {
     Key key,
     @required this.child,
   }) : super(key: key);
-
+  
   @override
   Widget build(BuildContext context) {
     // Size size = MediaQuery.of(context).size;
@@ -35,7 +35,7 @@ class Background extends StatelessWidget {
                 decoration: BoxDecoration(
                     color: HomeBackgroundsmallcircle, shape: BoxShape.circle),
               )),
-              
+
           Positioned(
               top: -85,
               right: 50,

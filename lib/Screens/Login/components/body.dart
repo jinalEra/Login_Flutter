@@ -1,19 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:login/Screens/forgotpassword/forgotpassword.dart';
 import 'package:login/Screens/signup/signup_form.dart';
-import 'package:login/Screens/success_page/success_page.dart';
 import 'package:login/components/linkbtn.dart';
 import 'package:login/components/loginpage_loginbtn.dart';
 import 'package:login/components/rounded_input_field.dart';
 import 'package:login/components/rounded_password_field.dart';
 import 'package:login/constant.dart';
 
-class LoginBody extends StatelessWidget {
+class LoginBody extends StatefulWidget {
   LoginBody({
     Key key,
   }) : super(key: key);
 
-  final changedbtn = false;
+  @override
+  _LoginBodyState createState() => _LoginBodyState();
+}
+
+class _LoginBodyState extends State<LoginBody> {
+
+  bool changedbtn = false;
 
   final _formkey = GlobalKey<FormState>();
 
@@ -50,7 +55,8 @@ class LoginBody extends StatelessWidget {
               // padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
               child: Image.asset(
                 "assets/image/lappy_seating_girl.png",
-                height: MediaQuery.of(context).size.height * 0.3,
+                height: MediaQuery.of(context).size.height * 0.2,
+                fit: BoxFit.fill,
               ),
             ),
 
@@ -68,9 +74,6 @@ class LoginBody extends StatelessWidget {
             ),
             // password textfield
             RoundedPasswordField(
-              hintText: "Password",
-              icon: Icons.lock,
-              onChanged: (value) {},
               validator: (value) {
                 if (value.isEmpty) {
                   return "Please Enter Password";
@@ -79,23 +82,29 @@ class LoginBody extends StatelessWidget {
                 }
                 return null;
               },
+              hintText: "Password",
+              icon: Icons.lock,
+              onChanged: (value) {},
+              
             ),
 
             // gape
             SizedBox(height: MediaQuery.of(context).size.height * 0.01),
             //login button
-            InkWell(
-              child: AnimatedContainer(
-                duration: Duration(seconds: 1),
-                padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 0),
-                child: LoginBtn(
-                  text: "LOGIN",
-                  press: () {
-                    if (_formkey.currentState.validate()) {
-                      Navigator.pushNamed(context, SuccessLoginPage.routeName);
-                    }
-                  },
-                  color: changedbtn ? Colors.blue : LoginBtnBack,
+            Material(
+              child: InkWell(
+                onTap: () async {
+                  setState(() => changedbtn = true);
+                  await Future.delayed(Duration(seconds: 1));
+                },
+                child: AnimatedContainer(
+                  duration: Duration(seconds: 1),
+                  padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 0),
+                  child: LoginBtn(
+                    text: changedbtn ? "Success Login" : "LOGIN"  ,
+                    color: changedbtn ? Colors.pink : LoginBtnBack,
+                    textColor: Colors.white,
+                  ),
                 ),
               ),
             ),
